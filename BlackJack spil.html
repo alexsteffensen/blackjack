@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blackjack spil</title>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"></link>
+<link rel="stylesheet" type="text/css" href="BlackJack.css"></link>
+</head>
+<body>
+<h1>Velkommen til BlackJack</h1>
+<p>Ved du ikke hvordan man spiller BlackJack? Så læs reglerne <a href="Regler.html" target="_blank">her</a></p>
+<br>
+<h2 id="Besked"></h2>
+<br>
+
+<div id="Output"></div>
+Dealerens kort: <span id="DKortVærdi"></span> <div id="DealersHånd"></div>
+Dine kort: <span id="SKortVærdi"></span> <div id="SpillersHånd"></div>
+
+<input type="button" id="StartKnap" value="Start" onclick="StartSpil()" class="btn btn-success"></input>
+
+<br><br>
+<div id="SpilHandlinger">
+<input type="button" id="Hit" value="Hit" class="btn btn-warning" onclick="Hit()"></input>
+<input type="button" id="Double" value="Double" class="btn btn-danger" onclick="Double()"></input>
+<input type="button" id="Stand" value="Stand" class="btn btn-primary" onclick="Stand()"></input> 
+</div>
+
+<br> 
+<p>Du indsatte: <span id="IndsatBeløb"></span>kr.</p>
+<br>
+<p>Du har: <span id="Penge"></span>kr. tilbage.</p>
+
+<div class="container">
+<div id="Indsatsen" class="input-group mb-3">
+  <input type="number" name="quantity" min="1" max="Spilpenge.value" id="Beløb" class="form-control" placeholder="Beløb" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-primary" id="IndsætKnap" type="button" onclick="IndsætBeløb(Beløb.value)">Indsæt</button> 
+  </div>
+</div>
+</div>
+
+</body>
+<script type="text/javascript" src="Blackjack.js"></script>
+
+</html>

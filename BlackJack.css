@@ -1,0 +1,96 @@
+
+body { 
+	text-align: center;
+	font-family: Arial;
+
+}
+
+h1 { 
+	font-size: 60px;
+	
+}
+
+#SpilHandlinger{ 	display: none;
+
+}
+
+#SkjultKort { 
+	height: 160px;
+	width: 110px;
+	background-image: url("Bagside af spillekort.png");
+	border-radius: 10px;
+	position: absolute;
+	border: 1px solid black;
+}
+
+.kort { 
+	height: 160px;
+	width: 110px;
+	padding: 3px;
+	border: 1px solid black;
+	background-color: white;
+	border-radius: 10px;
+	position: absolute;
+	display: inline-block;
+}
+
+.Øverste-del { 
+	text-align: left;
+	font-size: 20px;
+	line-height: 15px;
+	left: 3px;
+	top: 2px;
+}
+
+.Midterste-del { 
+	font-size: 60px;
+
+}
+
+.Nederste-del { 
+	text-align: left;
+	font-size: 20px;
+	line-height: 15px;
+	right: 3px;
+	transform: rotate(-180deg);
+	bottom: 2px;
+}
+
+.spades .kulør::after { 
+	content: "\2660";
+}
+
+.hearts .kulør::after {
+	content: "\2665";
+}
+
+.diams .kulør::after { 
+	content: "\2666";
+}
+
+.clubs .kulør::after { 
+	content: "\2663";
+}
+
+
+.clubs, .spades{
+	color:black;
+}
+
+.hearts, .diams{ 
+	color:red;
+}
+
+.container { 
+	width: 300px;
+
+}
+
+#Hit, #Double, #Stand { 
+	margin-left: 20px;
+}
+
+#DealersHånd, #SpillersHånd {
+	height: 180px;
+	width: 500px;
+}
